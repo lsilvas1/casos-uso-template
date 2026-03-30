@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Plantilla Caso de Uso</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    textarea {
+      resize: vertical;
+    }
+    .btn {
+      margin-top: 20px;
+      padding: 10px 15px;
+      border: none;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+    @media print {
+      .btn { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Plantilla Caso de Uso</h1>
+
+  <label>Nombre del Caso de Uso</label>
+  <input type="text">
+
+  <label>Actor(es)</label>
+  <input type="text">
+
+  <label>Descripción</label>
+  <textarea rows="3"></textarea>
+
+  <label>Precondiciones</label>
+  <textarea rows="3"></textarea>
+
+  <label>Flujo Principal</label>
+  <textarea rows="5"></textarea>
+
+  <label>Flujos Alternativos</label>
+  <textarea rows="5"></textarea>
+
+  <label>Postcondiciones</label>
+  <textarea rows="3"></textarea>
+
+  <label>Reglas de Negocio</label>
+  <textarea rows="3"></textarea>
+
+  <button class="btn" onclick="window.print()">Exportar a PDF</button>
+</div>
+
+</body>
+</html>
